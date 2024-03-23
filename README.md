@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# Wealthsimple Trade Enhancer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This addon will be activated only on wealthsimple.com to be able to add into the page its content related to the features below.
 
-Currently, two official plugins are available:
+Enhances Wealthsimple with these features:
+- Export your account into an XLS file (supports Yahoo Finance and TrackYourDividends)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![screenshot](./screenshot.png)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+> [!WARNING]
+> Disclaimer
+> Be aware, that this extension does not expose your data to an external tool or communicate in any other way to a another service. It only provides feature for the current tab, and its actions are limited to that tab only. It will use your session to be able to fetch all required info in order to make the feature work.
